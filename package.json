@@ -1,0 +1,39 @@
+{
+  "name": "@zfuzz/mcp",
+  "version": "0.2.0",
+  "description": "Security copilot for your IDE. SAST, SCA, secrets, threat modeling — right where you code. Rust-native, zero config, runs 100% locally.",
+  "license": "Apache-2.0",
+  "homepage": "https://zfuzz.dev",
+  "bin": {
+    "zfuzz-mcp": "./bin/run.js"
+  },
+  "main": "./bin/run.js",
+  "keywords": [
+    "mcp",
+    "security",
+    "sast",
+    "sca",
+    "secrets",
+    "vulnerability",
+    "scanner",
+    "claude",
+    "cursor",
+    "copilot",
+    "devsecops"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zfuzz-dev/zfuzz-mcp"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@zfuzz/cli": "0.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
