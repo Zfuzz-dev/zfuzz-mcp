@@ -1,3 +1,9 @@
+<div align="center">
+
+![Zfuzz — Your AI builds. We scan.](assets/banner.png)
+
+</div>
+
 # Zfuzz — security for everyone who builds with AI
 
 **You ask. Your AI answers with real scanners — not guesses.**
@@ -157,9 +163,10 @@ Built in **Rust** for sub-second answers. The AI brain is your editor's own mode
 ## Free · Open · Local
 
 No API keys. No cloud account. No telemetry. Runs 100% on your machine — your code never leaves it. Apache-2.0 licensed, open source.
-
-Part of the [Zfuzz](https://zfuzz.dev) security platform.
+---
 
 ## License
 
-Apache-2.0
+[Apache-2.0](LICENSE) — free & open source. © Zfuzz
+
+Part of the [Zfuzz](https://zfuzz.dev) security platform.
