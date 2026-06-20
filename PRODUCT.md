@@ -45,6 +45,6 @@ brand
 - 430+ secret detection patterns
 - 75+ MITRE ATT&CK techniques
 - 754 cybersecurity procedures
-- 8 MCP tools
+- 10 MCP tools
 - 8 compatible AI agents
 - $0 cost, Apache-2.0 license

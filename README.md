@@ -131,20 +131,41 @@ You never typed a command, opened a scanner, or read a report. You just asked.
 
 ## What's under the hood
 
-8 real tools your AI can call (it picks the right one — you don't have to):
+10 real tools your AI can call (it picks the right one — you don't have to):
 
 | Tool | In plain English |
 |------|------------------|
 | `scan_code` | Finds bugs attackers exploit — 441 rules, 7 languages (Python, JS/TS, Go, Java, Rust, Ruby, PHP). |
 | `scan_secrets` | Catches leaked passwords & API keys — 419 patterns (AWS, GitHub, Stripe, OpenAI, Anthropic…). |
 | `scan_dependencies` | Flags packages with known security holes (CVEs via OSV.dev). |
-| `scan_mcp_config` | Audits the AI tools/plugins you install for hidden malicious instructions. |
+| `scan_mcp_config` | Audits the MCP servers you install — hidden instructions, unicode tricks, wildcard permissions, unauthenticated remote servers. Returns a risk score + install verdict. |
+| `scan_skill` | Vets an agent skill (its `SKILL.md` + bundled scripts) before you install it — hidden instructions, unicode deception, over-broad triggers, wildcard tool grants, and dangerous code or leaked secrets in its scripts. |
+| `reconcile_permissions` | Compares the tools your agents actually use against what they declared — flags capabilities used but never declared, and permissions granted but never used (least privilege, from runtime telemetry). |
 | `check_mitre` | Maps any finding to real-world attack techniques (MITRE ATT&CK). |
 | `threat_model` | Asks "how could this be attacked?" across your whole project (STRIDE + MITRE). |
 | `explain_finding` | Explains any vulnerability — and the fix — in everyday language. |
 | `search_security_procedures` | Looks up 754 security playbooks (incident response, hardening, compliance). |
 
 Built in **Rust** for sub-second answers. The AI brain is your editor's own model (Claude/GPT) — **Zfuzz adds the security muscle, not another subscription.**
+
+### What a scan actually returns
+
+> **You:** Is this skill safe to install?
+>
+> **AI:** _[runs `scan_skill`]_
+> ```
+> Verdict: DO NOT INSTALL   (risk 100/100, 6 findings)
+>  CRIT  ZF-C001   Prompt Injection Pattern Detected         @ description
+>  MED   ZF-SK001  Overly Broad Skill Trigger                @ description
+>  HIGH  ZF-LP001  Wildcard Permission Grant (Bash(*), *)    @ allowed-tools
+>  CRIT  ZF-C002   Pipe-to-Shell Download-Exec (curl | bash) @ setup.sh
+>  HIGH  ZF-H001   Hardcoded Secret: AWS Access Key ID       @ setup.sh
+> ```
+> This skill hides "ignore all previous instructions" in its description, grants
+> itself every tool, and its setup script pipes a remote payload straight into a
+> shell. Don't install it.
+
+Every finding is from a real deterministic scanner — there is no model guessing in the scan path.
 
 ---
 

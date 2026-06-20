@@ -40,15 +40,17 @@ npx -y @zfuzz/mcp --transport http --port 8099
 ```
 > Use port **8099**, not 8090 (8090 is the Zfuzz platform's own port).
 
-## 3. The 8 tools your agent can call
+## 3. The 10 tools your agent can call
 
-`scan_code` · `scan_dependencies` · `scan_secrets` · `scan_mcp_config` · `check_mitre` · `threat_model` · `explain_finding` · `search_security_procedures`
+`scan_code` · `scan_dependencies` · `scan_secrets` · `scan_mcp_config` · `scan_skill` · `reconcile_permissions` · `check_mitre` · `threat_model` · `explain_finding` · `search_security_procedures`
 
 You never call these yourself — just ask naturally:
 - *"Is this login endpoint safe?"* → `scan_code`
 - *"Do my deps have known CVEs?"* → `scan_dependencies`
 - *"Threat-model my API"* → `threat_model`
 - *"Audit this MCP server config"* → `scan_mcp_config`
+- *"Is this skill safe to install?"* → `scan_skill`
+- *"Are my agents using more than they declared?"* → `reconcile_permissions`
 
 ## 4. Check it's connected
 
