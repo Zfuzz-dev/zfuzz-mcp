@@ -5,5 +5,5 @@
   <text x="640" y="298" text-anchor="middle" font-size="40" font-style="italic" font-weight="600" font-family="Georgia, 'Playfair Display', serif"><tspan fill="#0a0a0a">Your AI builds. We </tspan><tspan fill="#ff6b00">scan</tspan><tspan fill="#0a0a0a">.</tspan></text>
   <rect x="313" y="356" width="654" height="64" rx="32" fill="#0a0a0a"/>
   <text x="640" y="396" text-anchor="middle" font-size="22" font-family="'SF Mono', Menlo, 'Courier New', monospace" fill="#e8e6e3">claude mcp add zfuzz -- npx -y @zfuzz/mcp</text>
-  <text x="640" y="486" text-anchor="middle" font-size="27" font-weight="800" fill="#ff6b00" font-family="Helvetica, Arial, sans-serif">zfuzz.dev</text>
+  <text x="640" y="486" text-anchor="middle" font-size="27" font-weight="800" fill="#ff6b00" font-family="Helvetica, Arial, sans-serif">zfuzz.com</text>
 </svg>

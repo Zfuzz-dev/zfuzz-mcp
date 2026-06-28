@@ -13,7 +13,7 @@ Use either channel:
    [`zfuzz-dev/zfuzz-mcp`](https://github.com/zfuzz-dev/zfuzz-mcp), go to the
    **Security** tab → **Report a vulnerability**. This opens a private advisory
    visible only to you and the maintainers.
-2. **Email** — `security@zfuzz.dev`. Encrypt with our PGP key if your report is
+2. **Email** — `hello@zfuzz.com`. Encrypt with our PGP key if your report is
    sensitive (key fingerprint published on the Security tab).
 
 Please include, where possible:
@@ -85,8 +85,8 @@ We consider good-faith security research to be authorized conduct. We will not
 initiate legal action for research that respects this policy: no privacy
 violations, no data destruction, no degradation of others' services, and reports
 made privately through the channels above. If in doubt, ask first at
-`security@zfuzz.dev`.
+`hello@zfuzz.com`.
 
 ---
 
-Part of the [Zfuzz](https://zfuzz.dev) security platform. Apache-2.0.
+Part of the [Zfuzz](https://zfuzz.com) security platform. Apache-2.0.

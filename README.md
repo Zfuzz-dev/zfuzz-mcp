@@ -12,7 +12,7 @@
 ![price](https://img.shields.io/badge/price-%240-ff6b00)
 ![local](https://img.shields.io/badge/100%25-local-0a0a0a)
 
-**[Install](#-add-it-in-10-seconds)  ·  [Tools](#whats-under-the-hood)  ·  [Agents](#agent-compatibility-matrix)  ·  [When to use](#when-to-use--when-to-skip)  ·  [Security](SECURITY.md)  ·  [zfuzz.dev](https://zfuzz.dev)**
+**[Install](#-add-it-in-10-seconds)  ·  [Tools](#whats-under-the-hood)  ·  [Agents](#agent-compatibility-matrix)  ·  [When to use](#when-to-use--when-to-skip)  ·  [Security](SECURITY.md)  ·  [zfuzz.com](https://zfuzz.com)**
 
 </div>
 
@@ -69,7 +69,7 @@ gemini mcp add zfuzz npx -y @zfuzz/mcp
 Open your tool's **MCP / Integrations** settings and paste this URL:
 
 ```
-https://api.zfuzz.dev/mcp
+https://api.zfuzz.com/mcp
 ```
 
 <details>
@@ -123,7 +123,7 @@ Works with every major AI coding agent — and any MCP-compatible client. One li
 | **Gemini CLI** | ✅ | `gemini mcp add zfuzz npx -y @zfuzz/mcp` |
 | **Claude Desktop** | ✅ | add `zfuzz` to the MCP config |
 | **OpenCode** | ✅ | add `zfuzz` to `opencode.json` |
-| **Lovable · v0 · AI Studio** | ✅ | paste the hosted URL `https://api.zfuzz.dev/mcp` |
+| **Lovable · v0 · AI Studio** | ✅ | paste the hosted URL `https://api.zfuzz.com/mcp` |
 | **Any other MCP client** | ✅ | stdio `npx -y @zfuzz/mcp`, or the hosted URL in-browser |
 
 _No per-agent config to learn — the exact copy-paste line for each is under [Add it in 10 seconds](#-add-it-in-10-seconds)._
@@ -243,7 +243,7 @@ Every finding is from a real deterministic scanner — there is no model guessin
 **Skip it if you…**
 - Already run a full security team + pipeline and don't want findings in the editor.
 - Work fully offline with no Node.js (the scanner binary is pulled via `npx` / `@zfuzz/cli`).
-- Need a hosted dashboard with audit logs and SSO — that's the [Zfuzz platform](https://zfuzz.dev), not the free MCP.
+- Need a hosted dashboard with audit logs and SSO — that's the [Zfuzz platform](https://zfuzz.com), not the free MCP.
 
 ---
 
@@ -266,7 +266,7 @@ Pinned a version in your MCP config? Bump it (or drop the pin) and restart your 
 |---|---|
 | [User guide](USER_GUIDE.md) — install & first scan | [What it scans](PRODUCT.md) — coverage & approach |
 | [Security policy](SECURITY.md) — reporting & local-first design | [Contributing](CONTRIBUTING.md) — dev setup |
-| [Add it in 10 seconds](#-add-it-in-10-seconds) — every agent | [zfuzz.dev](https://zfuzz.dev) — the full platform |
+| [Add it in 10 seconds](#-add-it-in-10-seconds) — every agent | [zfuzz.com](https://zfuzz.com) — the full platform |
 
 ---
 
@@ -285,7 +285,7 @@ Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup.
 
 - **Questions / bugs** — [open an issue](../../issues) on this repo.
 - **Security reports** — see [SECURITY.md](SECURITY.md).
-- **The platform** — [zfuzz.dev](https://zfuzz.dev).
+- **The platform** — [zfuzz.com](https://zfuzz.com).
 
 ---
 
@@ -293,4 +293,4 @@ Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for dev setup.
 
 [Apache-2.0](LICENSE) — free & open source. © Zfuzz
 
-Part of the [Zfuzz](https://zfuzz.dev) security platform.
+Part of the [Zfuzz](https://zfuzz.com) security platform.

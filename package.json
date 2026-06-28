@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Security copilot for your IDE. SAST, SCA, secrets, threat modeling — right where you code. Rust-native, zero config, runs 100% locally.",
   "license": "Apache-2.0",
-  "homepage": "https://zfuzz.dev",
+  "homepage": "https://zfuzz.com",
   "bin": {
     "zfuzz-mcp": "./bin/run.js"
   },

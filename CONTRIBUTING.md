@@ -79,4 +79,4 @@ Do **not** use issues or PRs for vulnerabilities — see [SECURITY.md](SECURITY.
 
 ---
 
-Part of the [Zfuzz](https://zfuzz.dev) security platform. Apache-2.0.
+Part of the [Zfuzz](https://zfuzz.com) security platform. Apache-2.0.

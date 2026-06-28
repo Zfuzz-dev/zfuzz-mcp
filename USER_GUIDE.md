@@ -33,7 +33,7 @@ gemini mcp add zfuzz npx -y @zfuzz/mcp
 { "mcpServers": { "zfuzz": { "command": "npx", "args": ["-y", "@zfuzz/mcp"] } } }
 ```
 
-**Web agents (AI Studio, v0, Lovable)** — paste the hosted URL `https://api.zfuzz.dev/mcp`, or self-host:
+**Web agents (AI Studio, v0, Lovable)** — paste the hosted URL `https://api.zfuzz.com/mcp`, or self-host:
 ```bash
 npx -y @zfuzz/mcp --transport http --port 8099
 # then point the client at http://localhost:8099/mcp
@@ -70,4 +70,4 @@ You never call these yourself — just ask naturally:
 
 ---
 
-Part of the [Zfuzz](https://zfuzz.dev) security platform. Apache-2.0.
+Part of the [Zfuzz](https://zfuzz.com) security platform. Apache-2.0.
