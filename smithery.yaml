@@ -1,0 +1,11 @@
+# Smithery configuration — https://smithery.ai/docs
+# NOTE: Smithery's manifest format evolves. Confirm against the current docs before
+# connecting the repo. This stdio skeleton wraps the published npm package @zfuzz/mcp
+# (no build needed — Smithery just launches it).
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({ command: "npx", args: ["-y", "@zfuzz/mcp"] })

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.json",
+  "name": "io.github.Zfuzz-dev/zfuzz-mcp",
+  "description": "Real security scanners for AI coding agents: SAST, secrets, CVEs, MCP/skill vetting, MITRE ATT&CK.",
+  "repository": {
+    "url": "https://github.com/Zfuzz-dev/zfuzz-mcp",
+    "source": "github"
+  },
+  "version": "0.2.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@zfuzz/mcp",
+      "version": "0.2.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
