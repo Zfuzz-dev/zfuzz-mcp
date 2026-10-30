@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "zfuzz": {
+      "command": "npx",
+      "args": ["-y", "@zfuzz/mcp"]
+    }
+  }
+}

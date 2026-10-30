@@ -1,0 +1,14 @@
+{
+  "name": "zfuzz",
+  "version": "0.2.1",
+  "description": "Security copilot for AI coding agents. 10 real scanners your agent can call: SAST (441 rules, 7 languages), secrets (419 patterns), CVEs via OSV.dev, MCP/skill vetting, MITRE ATT&CK, threat modeling. Rust-native, deterministic, 100% local, no account, no API key.",
+  "author": {
+    "name": "Zfuzz",
+    "email": "hello@zfuzz.com"
+  },
+  "homepage": "https://zfuzz.com",
+  "repository": "https://github.com/Zfuzz-dev/zfuzz-mcp",
+  "license": "Apache-2.0",
+  "keywords": ["security", "sast", "sca", "secrets", "vulnerability", "scanner", "mcp", "devsecops", "threat-model", "mitre"],
+  "logo": "assets/zfuzz-icon-400.png"
+}
